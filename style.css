@@ -15,14 +15,13 @@
 }
 
 /* BREAKPOINTS */
-
 @media (max-width: 767px) {
     .bannerText{
-        margin-top: 15%;
+        margin-top: 70px;
         text-align: center;
     }
     .review{
-        width: 50%;
+        height: 180px;
     }
 }
 
@@ -69,4 +68,7 @@
 .margem{
     margin-top: 3em;
     margin-bottom: 3em;
+}
+.contatoImg{
+    max-height: 50px;
 }
