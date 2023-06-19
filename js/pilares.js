@@ -16,7 +16,7 @@ for (let i = 0; i < link.length; i++) {
   // TESTE - Alterando os pilares no Hover
 
   pilaresElement.addEventListener('mouseover', function() {
-    pilaresElement.style.opacity = 0; // Define a opacidade para 0
+    pilaresElement.style.opacity = 0.25; // Define a opacidade para 0
 
     setTimeout(function() {
         pilaresElement.innerHTML = `<div class="p-4 text-light mb-3" style="background-color: #203554">
@@ -46,7 +46,7 @@ for(let i = 0; i < contatosDados.length; i++){
   contatosElement.innerHTML = `<div class="card">
     <div class="card-body">
       <img src="${contatoImg[i]}" alt="${contatosDados[i]}" class="contatoImg mb-4">
-      <a href="${contatosURL[i]}" class="btn btn-outline-secondary d-block">Fale conosco</a>
+      <a href="${contatosURL[i]}" class="btn btn-outline-dark d-block">Fale conosco</a>
     </div>
   </div>`;
 
