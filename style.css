@@ -23,6 +23,10 @@
     .review{
         height: 180px;
     }
+    .parallax-section {
+      height: 60vh; /* Ajuste conforme necessário */
+      background-image: url('img/5.png'); /* Substitua pelo caminho correto para a imagem de plano de fundo */
+    }
 }
 
 @media (min-width: 768px) {
@@ -31,6 +35,10 @@
     }
     .review{
         max-height: 200px;
+    }
+    .parallax-section {
+      height: 100vh; /* Ajuste conforme necessário */
+      background-image: url('img/2.png'); /* Substitua pelo caminho correto para a imagem de plano de fundo */
     }
 }
 
@@ -71,4 +79,63 @@
 }
 .contatoImg{
     max-height: 50px;
+}
+
+/* REVIEWS */
+.accelerated.box {
+  transition: transform 750ms;
+  will-change: transform;
+}
+.accelerated.box:hover,
+.accelerated.box:focus {
+  transform: translateY(10px);
+}
+
+.fs-4 {
+  transition: transform 750ms;
+  will-change: transform;
+}
+.fs-4:hover,
+.fs-4:focus {
+  transform: translateX(10px);
+}
+
+.janky.box {
+  transition: margin-top 750ms;
+  will-change: margin-top;
+}
+.janky.box:hover,
+.janky.box:focus {
+  margin-top: 10px;
+}
+
+
+/* Banner - PROJETOS */
+.parallax-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax-text {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  top: 55%;
+}
+
+.faixa{
+  background-color: #697D2F;
+  padding: 3px;
+  color: #F3F3F3;
+}
+
+.socialImg{
+  border: 2px solid #202020;
+  border-radius: 2px;
+  width: 4em;
+  height: 3.9em;
+}
+.socialImg:hover{
+  background-color: #697D2F30;
 }
