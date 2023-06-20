@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quarta Rede</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
-  <body class="bg-body-tertiary">
-    <nav class="navbar fixed-top bg-transparent">
+  <body class="bg-body-tertiary bg-line">
+    <ul class="background">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
+    <nav class="navbar fixed-top bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="index.html"></a>
         <ul class="nav justify-content-end"></ul>
@@ -31,18 +45,18 @@
             <img src="img/24.png" alt="Universo" class="img-fluid pt-3" style="max-height: 450px;">
           </div>
           <div class="d-none d-sm-none d-md-block">
-            <a href="#">
-              <img src="img/Trabalhos.png" alt="Trabalhos" class="pt-3 text-end" style="max-height: 90px;" >
+            <a href="projetos.html">
+              <img src="img/Trabalhos.png" alt="Trabalhos" class="pt-3 text-end effectX" style="max-height: 90px;" >
             </a>
           </div>
         </div>
         <a class="col-md-auto d-none d-sm-none d-md-block p-0 mt-5" href="index.html#sobreNos">
-          <img src="img/SobreNos.png" alt="SobreNós" class="sobreNos pt-3">
+          <img src="img/SobreNos.png" alt="SobreNós" class="sobreNos pt-3 effectY">
         </a>
       </div>
     </div>
 
-    <section class="container text-center" id="sobreNos">
+    <section class="container text-center" id="sobreNos" style="scroll-margin: 80px;">
       <div class="margem fs-2">
         <p>Acreditamos no <span class="highlight">poder transformador</span> das ideias e estamos comprometidos em ser parceiros no caminho para o sucesso dos seus projetos.</p>
       </div>
@@ -50,21 +64,59 @@
       <div class="margem fs-2">
         <p>Apresentamos a inovadora abordagem da Quarta Rede, que para nós, significa oferecer <span class="highlight">maior autonomia</span> do cliente e incentivar a criação colaborativa.</p>
       </div>
-
-      <div class="row row-cols-sm-1 row-cols-md-3">
-        <div class="col accelerated box"><img src="img/Card-1.png" alt="Review1" class="review"></div>
-        <div class="col janky box"><img src="img/Card-2.png" alt="Review2" class="review"></div>
-        <div class="col accelerated box"><img src="img/Card-3.png" alt="Review3" class="review"></div>
+      <div class="row">
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/ads.png" alt="Google Ads">
+            <p class="card-text mt-2">Maximizamos seu retorno com a poderosa ferramenta para alcançarmos seu público de forma eficaz e direcionada. </p>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/meta.png" alt="Meta Ads">
+            <p class="card-text mt-2">Exploramos todo o potencial dessa ferramenta, garantindo que sua campanha atinja seu público no momento certo.</p>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/adobe.png" alt="Google Ads">
+            <p class="card-text mt-2">Utilizamos as ferramentas de criação e edição da Adobe para produção de conteúdo de alta qualidade que cativam seu público.</p>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/figma.png" alt="Figma">
+            <p class="card-text mt-2">Desenvolvemos soluções de prototipação no Figma, combinando nossa expertise em design digital para criação de interfaces.</p>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/react.png" alt="React">
+            <p class="card-text mt-2">Transformamos a experiência do usuário desenvolvendo de páginas responsivas e de alto desempenho com uso dessa biblioteca.</p>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4">
+          <div class="card-body tools">
+            <img src="img/tools/git.png" alt="GitHub">
+            <p class="card-text mt-2">Garantimos total segurança e tranquilidade em cada etapa do projeto com nosso controle de versão pelo GitHub.</p>
+          </div>
+        </div>
       </div>
+      
     </section>
 
-    <section id="contato">
-      <div class="fs-4 margem text-center">
-        <p>Faça parte do nosso time de clientes satisfeitos.</p>
-        <p>Entre em contato agora mesmo e descubra como podemos contribuir para o seu sucesso.</p>
+    <section id="contato" class="container">
+      <div class="fs-3 margem text-center">
+        <p>Faça parte do nosso time de clientes satisfeitos!</p>
+        <div class="row row-cols-sm-1 row-cols-md-3 m-5">
+          <div class="col accelerated box"><img src="img/Card-1.png" alt="Review1" class="review"></div>
+          <div class="col accelerated box"><img src="img/Card-2.png" alt="Review2" class="review"></div>
+          <div class="col accelerated box"><img src="img/Card-3.png" alt="Review3" class="review"></div>
+        </div>
+        <p>Entre em contato e descubra como podemos contribuir para o seu sucesso.</p>
       </div>
-      <div class="container text-center mb-5">
-        <div class="row contatosLink"></div>
+      <div class="container mb-5">
+        <div class="row socialMedia justify-content-center"></div>
       </div>
     </section>
 
