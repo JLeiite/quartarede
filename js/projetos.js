@@ -8,7 +8,7 @@ for(let i = 0; i < contatosDados.length; i++){
   let socialElement = document.createElement('div'); // Cria um novo elemento de contato
   socialElement.classList.add('col-sm-2', 'mb-5');
   socialElement.innerHTML = `<a href="${contatosURL[i]}">
-      <img src="${contatoImg[i]}" alt="${contatosDados[i]}" class="socialImg p-3 m-2"></a>`;
+      <img src="${contatoImg[i]}" alt="${contatosDados[i]}" class="socialImg p-3 mb-1"></a>`;
 
   socialMedia.appendChild(socialElement);
 }
