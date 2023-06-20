@@ -31,3 +31,19 @@ for (let i = 0; i < link.length; i++) {
 
   navDrop.appendChild(navDropdown);
 }
+
+//VIDEO - Removing functions in Firefox
+var vids = $("video"); 
+$.each(vids, function(){
+       this.controls = false; 
+});
+
+//Loop though all Video tags and set Controls as false
+$("video").click(function() {
+  //console.log(this); 
+  if (this.paused) {
+    this.play();
+  } else {
+    this.pause();
+  }
+});

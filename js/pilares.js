@@ -1,6 +1,6 @@
 // Customizando os pilares
 let pilares = document.querySelector('.pilares');
-let pilar = ["img/Pilar1.png", "img/Pilar2.png", "img/Pilar3.png"];
+let pilar = ["img/pilar/Pilar1.png", "img/pilar/Pilar2.png", "img/pilar/Pilar3.png"];
 let nomePilar = ["Link", "Ritmo", "Upgrade"]
 let pilarHover = ["União para que todos os lados sejam entendidos", "Convívio em harmonia com colaboradores e parceiros", "Jornada de evolução contínua que nos impulsiona sempre à frente."]
 
@@ -34,22 +34,18 @@ for (let i = 0; i < link.length; i++) {
 
 }
 
+
 // Customizando contatos
-let contatosLink = document.querySelector('.contatosLink');
+let socialMedia = document.querySelector('.socialMedia');
 let contatosDados = ['Whatsapp', 'Email', 'Instagram'];
-let contatoImg = ['img/whatsapp.png', 'img/email.png', 'img/instagram.png'];
+let contatoImg = ['img/contact/whatsapp.png', 'img/contact/email.png', 'img/contact/instagram.png'];
 let contatosURL = ['https://wa.me/5511940038574', 'mailto:contato@quartarede.com.br', 'https://www.instagram.com/quartarede/'];
 
 for(let i = 0; i < contatosDados.length; i++){
-  let contatosElement = document.createElement('div'); // Cria um novo elemento de contato
-  contatosElement.classList.add('col-sm-12', 'col-md-4', 'mb-3');
-  contatosElement.innerHTML = `<div class="card">
-    <div class="card-body">
-      <img src="${contatoImg[i]}" alt="${contatosDados[i]}" class="contatoImg mb-4">
-      <a href="${contatosURL[i]}" class="btn btn-outline-dark d-block">Fale conosco</a>
-    </div>
-  </div>`;
+  let socialElement = document.createElement('div'); // Cria um novo elemento de contato
+  socialElement.classList.add('col-sm-2', 'mb-5');
+  socialElement.innerHTML = `<a href="${contatosURL[i]}">
+      <img src="${contatoImg[i]}" alt="${contatosDados[i]}" class="socialImg p-3"></a>`;
 
-  contatosLink.appendChild(contatosElement);
+  socialMedia.appendChild(socialElement);
 }
-
