@@ -31,7 +31,7 @@ video::-webkit-media-controls-panel {
         height: 180px;
     }
     .parallax-section {
-      height: 60vh; /* Ajuste conforme necessário */
+      height: 50vh; /* Ajuste conforme necessário */
       background-image: url('../img/5.png'); /* Substitua pelo caminho correto para a imagem de plano de fundo */
       z-index: 0;
     }
@@ -52,7 +52,7 @@ video::-webkit-media-controls-panel {
         max-height: 200px;
     }
     .parallax-section {
-      height: 100vh; /* Ajuste conforme necessário */
+      height: 95vh; /* Ajuste conforme necessário */
       background-image: url('../img/2.png'); /* Substitua pelo caminho correto para a imagem de plano de fundo */
     }
 }
