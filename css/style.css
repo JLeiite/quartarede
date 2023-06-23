@@ -14,12 +14,11 @@
     width: 75px;
 }
 
-/* VIDEO AUTOPLAY REMOVED 
+/* VIDEO AUTOPLAY REMOVED */
 video::-webkit-media-controls-panel {
   display: none !important;
   opacity: 1 !important;
 }
-*/
 
 /* BREAKPOINTS */
 @media (max-width: 767px) {
