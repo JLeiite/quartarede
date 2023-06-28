@@ -14,7 +14,11 @@
     width: 75px;
 }
 
-/* VIDEO AUTOPLAY REMOVED */
+/* VIDEO */
+video{
+  max-width: 620px;
+}
+/* AUTOPLAY REMOVED */
 video::-webkit-media-controls-panel {
   display: none !important;
   opacity: 1 !important;
@@ -34,6 +38,9 @@ video::-webkit-media-controls-panel {
       background-image: url('../img/5.png'); /* Substitua pelo caminho correto para a imagem de plano de fundo */
       z-index: 0;
     }
+    .videoM{
+      width: 100vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -46,6 +53,9 @@ video::-webkit-media-controls-panel {
     }
     .bannerText{
         margin-top: 40%;
+    }
+    .videoM{
+      margin-top: 4em;
     }
     .review{
         max-height: 200px;
