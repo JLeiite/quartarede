@@ -39,7 +39,7 @@ video::-webkit-media-controls-panel {
       z-index: 0;
     }
     .videoM{
-      width: 100vw;
+      width: 90vw;
     }
 }
 
